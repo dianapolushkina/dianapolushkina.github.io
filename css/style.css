@@ -1,0 +1,422 @@
+.elem, .elem * {
+    box-sizing: border-box;
+    margin: 0 !important;
+}
+.elem {
+    display: inline-block;
+    font-size: 0;
+    width: 33%;
+    border: 20px solid transparent;
+    border-bottom: none;
+    background: #fff;
+    padding: 0;
+    height: auto;
+    background-clip: padding-box;
+}
+.elem > span {
+    display: block;
+    cursor: pointer;
+    height: 0;
+    padding-bottom:	70%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.lcl_fade_oc.lcl_pre_show #lcl_overlay,
+.lcl_fade_oc.lcl_pre_show #lcl_window,
+.lcl_fade_oc.lcl_is_closing #lcl_overlay,
+.lcl_fade_oc.lcl_is_closing #lcl_window {
+    opacity: 0 !important;
+}
+.lcl_fade_oc.lcl_is_closing #lcl_overlay {
+    -webkit-transition-delay: .15s !important;
+    transition-delay: .15s !important;
+}
+
+/*--------------------------------
+PRIMARY STYLES
+--------------------------------*/
+
+@font-face {
+    font-family: Quicksand;
+    src: url('../fonts/Quicksand-Regular.woff');
+}
+
+body {
+    font-family: Quicksand, serif;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+
+.greetings,
+.copyright {
+    letter-spacing: 1px;
+    font-weight: 100;
+    text-decoration: none;
+    color: white;
+}
+
+.nav_button:hover {
+    cursor: pointer;
+}
+
+/*--------------------------------
+VIDEO BACKGROUND
+--------------------------------*/
+
+.video-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.video-container video {
+    /* Make video to at least 100% wide and tall */
+    min-width: 100%;
+    min-height: 100%;
+
+    /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+    width: auto;
+    height: auto;
+
+    /* Center the video */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*--------------------------------
+PAGE DESIGN
+--------------------------------*/
+
+header {
+    top: 0;
+}
+
+.mobile_menu {
+    position: absolute;
+    top: 30px;
+}
+
+.expertise {
+    left: 30px;
+}
+
+.services {
+    right: 30px;
+}
+
+/*---------------Main content---------------*/
+
+.logo {
+    margin-top: 20px;
+    height: 100px;
+}
+
+.content {
+    position: relative;
+    top: 5%;
+    text-align: center;
+}
+
+.greetings {
+    font-size: 350%;
+}
+
+/*---------------Footer---------------*/
+
+footer {
+    bottom: 2%;
+}
+
+.social_media {
+    height: 40px;
+    width: 250px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.social_image {
+    border: 2px solid white;
+    padding: 3px;
+    margin: 0 4px 0;
+    border-radius: 40px;
+    max-height: 100%;
+}
+
+#instagram:hover {
+    border-color: #c32aa3;
+}
+
+#facebook:hover {
+    border-color: #3b5998;
+}
+
+#linkedin:hover {
+    border-color: #007bb5;
+}
+
+#twitter:hover {
+    border-color: #1da1f2;
+}
+
+.copyright {
+    width: 180px;
+    font-size: 1em;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin: 10px auto;
+}
+
+/*--------------------------------
+SIDE BUTTONS
+--------------------------------*/
+.sideButtons {
+    position: relative;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+.button {
+    border: 2px solid darkorange;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 80px;
+    width: 250px;
+    height: 60px;
+}
+.button:hover {
+    box-shadow: 0 0 0 4px darkorange;
+}
+
+.nav_button {
+    display: inline-block;
+    width: 250px;
+    margin: 20px 50px;
+    height: 60px;
+    line-height: 60px;
+    padding: 8px;
+    font-size: 1.2em;
+    text-align: center;
+
+    letter-spacing: 1px;
+    font-weight: 100;
+    text-decoration: none;
+    color: white;
+}
+
+.profile_img_container {
+    width: 100%;
+    text-align: center;
+}
+
+.profile_img {
+    max-width: 350px;
+    margin: auto;
+}
+
+.profile_desc {
+    display: inline;
+    margin: 20px;
+}
+
+.work_exp {
+    padding: 20px;
+    color: black;
+    margin: 50px;
+    border-radius: 10px;
+    border: 3px solid orange;
+}
+
+
+/*.nav_button:hover {*/
+/*    box-shadow: 0px 0px 0px 4px darkorange;*/
+/*}*/
+
+/*=====================================
+------------------------
+MEDIA QUERIES
+------------------------
+=====================================*/
+
+/* smartphones, iPhone, portrait 480x320 phones */
+
+/*@media (min-width: 320px) {*/
+
+/*    .contact_me {*/
+/*        margin-top: 55px;*/
+/*    }*/
+/*}*/
+
+
+/*!* smartphones, Android phones, landscape iPhone *!*/
+
+/*@media (min-width:480px) {*/
+
+/*    .logo {*/
+/*        height: 80px;*/
+/*    }*/
+
+/*    .content {*/
+/*        top: 30%;*/
+/*    }*/
+
+/*    .contact_me {*/
+/*        margin-top: 30px;*/
+/*    }*/
+
+/*    .contact_me span {*/
+/*        font-size: 1em;*/
+/*    }*/
+
+/*    .social_media {*/
+/*        height: 15px;*/
+/*    }*/
+
+/*    .copyright {*/
+/*        font-size: 0.6em;*/
+/*    }*/
+/*}*/
+
+
+/*!* portrait tablets, landscape 800x480 or 854x480 phones *!*/
+
+/*@media (min-width:641px) {*/
+
+/*    .greetings {*/
+/*        font-size: 170%;*/
+/*        letter-spacing: 2px;*/
+/*    }*/
+
+/*    .contact_me {*/
+/*        margin-top: 35px;*/
+/*    }*/
+
+/*    .contact_me span {*/
+/*        font-size: 1.2em;*/
+/*    }*/
+
+/*    .social_media {*/
+/*        height: 20px;*/
+/*    }*/
+
+/*    .copyright {*/
+/*        font-size: 0.7em;*/
+/*    }*/
+/*}*/
+
+
+/*@media (min-width:641px) and (orientation: portrait) {*/
+
+/*    .logo {*/
+/*        height: 150px;*/
+/*    }*/
+
+/*    .mobile_menu {*/
+/*        font-size: 1.5em;*/
+/*        letter-spacing: 2px;*/
+/*    }*/
+
+/*    .greetings {*/
+/*        font-size: 300%;*/
+/*    }*/
+
+/*    .contact_me {*/
+/*        margin-top: 85px;*/
+/*    }*/
+
+/*    .contact_me span {*/
+/*        padding: 30px;*/
+/*        border-radius: 40px;*/
+/*        font-size: 1.8em;*/
+/*    }*/
+
+/*    .social_media {*/
+/*        height: 30px;*/
+/*    }*/
+
+/*    .copyright {*/
+/*        font-size: 1em;*/
+/*    }*/
+/*}*/
+
+
+/*!* tablet, landscape iPad, lo-res laptops ands desktops *!*/
+
+/*@media (min-width:961px) {*/
+
+/*    .logo {*/
+/*        height: 190px;*/
+/*    }*/
+
+/*    .mobile_menu {*/
+/*        font-size: 1.5em;*/
+/*        letter-spacing: 2px;*/
+/*    }*/
+/*    .content {*/
+/*        top: 35%;*/
+/*    }*/
+/*    .greetings {*/
+/*        font-size: 300%;*/
+/*    }*/
+
+/*    .contact_me {*/
+/*        margin-top: 90px;*/
+/*    }*/
+
+/*    .contact_me span {*/
+/*        padding: 30px;*/
+/*        border-radius: 40px;*/
+/*        font-size: 2em;*/
+/*    }*/
+
+/*    .social_media {*/
+/*        height: 30px;*/
+/*    }*/
+
+/*    .copyright {*/
+/*        font-size: 1em;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width:1025px) {*/
+
+/*    .mobile_menu {*/
+/*        display: none;*/
+/*    }*/
+/*    .arrow {*/
+/*        visibility: visible;*/
+/*    }*/
+
+/*    .greetings {*/
+/*        font-size: 350%;*/
+/*    }*/
+
+/*    .contact_me span {*/
+/*        transition: 0.3s;*/
+/*        font-size: 1.8em;*/
+/*    }*/
+
+/*    .contactButton:hover {*/
+/*        box-shadow: 0px 0px 0px 5px darkorange;*/
+/*        padding-left: 50px;*/
+/*        padding-right: 50px;*/
+/*    }*/
+/*}*/
