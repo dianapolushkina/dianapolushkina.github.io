@@ -1,36 +1,3 @@
-.elem, .elem * {
-    box-sizing: border-box;
-    margin: 0 !important;
-}
-
-.gallery_panel {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 20px;
-    align-items: stretch;
-}
-
-.elem > span {
-    display: block;
-    cursor: pointer;
-    height: 0;
-    padding-bottom: 70%;
-    background-size: cover;
-    background-position: center center;
-}
-
-.lcl_fade_oc.lcl_pre_show #lcl_overlay,
-.lcl_fade_oc.lcl_pre_show #lcl_window,
-.lcl_fade_oc.lcl_is_closing #lcl_overlay,
-.lcl_fade_oc.lcl_is_closing #lcl_window {
-    opacity: 0 !important;
-}
-
-.lcl_fade_oc.lcl_is_closing #lcl_overlay {
-    -webkit-transition-delay: .15s !important;
-    transition-delay: .15s !important;
-}
-
 /*--------------------------------
 PRIMARY STYLES
 --------------------------------*/
@@ -51,25 +18,6 @@ body {
     width: 100%;
     height: 100%;
     margin: 0;
-}
-
-footer {
-    position: fixed;
-    width: 100%;
-    left: 0;
-    text-align: center;
-}
-
-.greetings,
-.copyright {
-    letter-spacing: 1px;
-    font-weight: 100;
-    text-decoration: none;
-    color: white;
-}
-
-.nav_button:hover {
-    cursor: pointer;
 }
 
 /*--------------------------------
@@ -105,29 +53,7 @@ VIDEO BACKGROUND
 PAGE DESIGN
 --------------------------------*/
 
-header {
-    top: 0;
-}
-
-.mobile_menu {
-    position: absolute;
-    top: 30px;
-}
-
-.expertise {
-    left: 30px;
-}
-
-.services {
-    right: 30px;
-}
-
 /*---------------Main content---------------*/
-
-.logo {
-    margin-top: 20px;
-    height: 100px;
-}
 
 .content {
     position: relative;
@@ -137,6 +63,10 @@ header {
 
 .greetings {
     font-size: 350%;
+    letter-spacing: 1px;
+    font-weight: 100;
+    text-decoration: none;
+    color: white;
 }
 
 /*---------------Footer---------------*/
@@ -144,10 +74,12 @@ header {
 footer {
     position: absolute;
     bottom: 3%;
+    width: 100%;
+    left: 0;
+    text-align: center;
 }
 
 .social_media {
-
     height: 45px;
     width: 100%;
     margin: auto;
@@ -174,17 +106,11 @@ footer {
     border-color: #007bb5;
 }
 
-.copyright {
-    width: 180px;
-    font-size: 1em;
-    letter-spacing: 1px;
-    line-height: 25px;
-    margin: 10px auto;
-}
-
 /*--------------------------------
 SIDE BUTTONS
 --------------------------------*/
+/*TODO: change*/
+
 .sideButtons {
     position: relative;
     top: 5%;
@@ -221,28 +147,251 @@ SIDE BUTTONS
     color: white;
 }
 
-.profile_img_container {
+.nav_button:hover {
+    cursor: pointer;
+}
+
+/*--------------------------------
+GALLERY
+--------------------------------*/
+
+.elem, .elem * {
+    box-sizing: border-box;
+    margin: 0 !important;
+}
+
+.gallery_panel {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    align-items: stretch;
+}
+
+.elem > span {
+    display: block;
+    cursor: pointer;
+    height: 0;
+    padding-bottom: 70%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.lcl_fade_oc.lcl_pre_show #lcl_overlay,
+.lcl_fade_oc.lcl_pre_show #lcl_window,
+.lcl_fade_oc.lcl_is_closing #lcl_overlay,
+.lcl_fade_oc.lcl_is_closing #lcl_window {
+    opacity: 0 !important;
+}
+
+.lcl_fade_oc.lcl_is_closing #lcl_overlay {
+    -webkit-transition-delay: .15s !important;
+    transition-delay: .15s !important;
+}
+
+/*--------------------------------
+ABOUT ME
+--------------------------------*/
+
+.about_container {
+    position: relative;
     width: 100%;
+    height: 100%;
     text-align: center;
 }
 
-.profile_img {
-    max-width: 350px;
+.about_label_container {
+    height: 20%;
+}
+.about_label {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10vw !important;
+    margin: auto;
+    z-index: 10;
+    color: white !important;
+}
+
+.about_photo {
+    float: left;
+    width: 50%;
+    height: 80%;
+    display: inline-block;
+    background-image: url("../images/catp.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.about_text_container {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 80%;
+    display: inline-block;
+}
+
+.about_text_container_child {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+}
+
+.about_text {
+    font-size: 1.25vw !important;
+    color: white !important;
+}
+
+.download_cv {
+    margin: 15px auto;
+    background: transparent;
+    color: white;
+    border: 2px solid #fd0a70;
+    font-weight: 100;
+    transition: 0.3s;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 1.25vw;
+}
+
+.download_cv:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0 4px #fd0a70;
+}
+
+/*--------------------------------
+CONTACT
+--------------------------------*/
+
+#contact_sidenav {
+    width: 100%;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     margin: auto;
 }
 
-.profile_desc {
-    display: inline;
-    margin: 20px;
+.contact_container {
+    text-align: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
 
-.work_exp {
-    padding: 20px;
-    color: black;
-    margin: 50px;
-    border-radius: 10px;
-    border: 3px solid #fd0a70;
+#thankyoumessage {
+    color: white;
+    font-size: 40px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 90%;
 }
+
+#contact_sidenav p {
+    color: white;
+    width: 800px;
+    max-width: 90%;
+    font-size: 1.1em;
+    margin: auto;
+    letter-spacing: 1.5px;
+}
+
+.customer_name {
+    float: left;
+    margin: 20px auto;
+    border-radius: 12px;
+    padding: 10px;
+    width: 45%;
+    font-size: 100%;
+}
+
+.customer_email {
+    float: right;
+    margin: 20px auto;
+    border-radius: 12px;
+    padding: 10px;
+    width: 45%;
+    font-size: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 100%;
+}
+
+fieldset {
+    border: none;
+    margin: 30px auto;
+    max-width: 90%;
+    width: 500px;
+}
+
+.submit_project {
+    margin: 30px auto;
+    background: transparent;
+    color: white;
+    border: 2px solid #fd0a70;
+    letter-spacing: 1;
+    font-weight: 100;
+    transition: 0.3s;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    font-size: 1.5em;
+}
+
+.submit_project:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0 4px #fd0a70
+}
+
+.loader {
+    display: none;
+    border: 7px solid #f3f3f3; /* Light grey */
+    border-top: 7px solid #fd0a70; /* Blue */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    animation: spin 1s linear infinite;
+}
+
+@media (max-width: 670px) {
+    .customer_name {
+        margin: 20px auto;
+        display: block;
+        float: none;
+        width: 90%
+    }
+
+    .customer_email {
+        margin: 20px auto;
+        display: block;
+        float: none;
+        width: 90%
+    }
+
+    textarea {
+        width: 90%;
+    }
+
+    #contact_sidenav {
+        height: 100%;
+        overflow-y: auto;
+    }
+}
+
 
 /*=====================================
 ------------------------
