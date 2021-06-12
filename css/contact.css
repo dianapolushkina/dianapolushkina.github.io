@@ -72,7 +72,7 @@ fieldset {
     margin: 30px auto;
     background: transparent;
     color: white;
-    border: 2px solid darkorange;
+    border: 2px solid #c32aa3;
     letter-spacing: 1;
     font-weight: 100;
     transition: 0.3s;
@@ -85,7 +85,7 @@ fieldset {
 
 .submit_project:hover {
     cursor: pointer;
-    box-shadow: 0px 0px 0px 5px darkorange;
+    box-shadow: 0px 0px 0px 5px #c32aa3;
     padding-left: 40px;
     padding-right: 40px;
 }
@@ -93,7 +93,7 @@ fieldset {
 .loader {
     display: none;
     border: 7px solid #f3f3f3; /* Light grey */
-    border-top: 7px solid darkorange; /* Blue */
+    border-top: 7px solid #c32aa3; /* Blue */
     border-radius: 50%;
     width: 30px;
     height: 30px;

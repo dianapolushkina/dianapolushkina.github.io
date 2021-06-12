@@ -19,7 +19,7 @@ body {
 }
 
 a {
-  color: #89ba2c;
+  color: #334987;
   text-decoration: none;
 }
 
@@ -42,7 +42,7 @@ Slide In Panel - by CodyHouse.co
   position: relative;
   display: inline-block;
   padding: 1em 2em;
-  background-color: #89ba2c;
+  background-color: #334987;
   color: #ffffff;
   border-radius: 50em;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 0 5px rgba(0, 0, 0, 0.1);
@@ -120,7 +120,7 @@ Slide In Panel - by CodyHouse.co
 }
 
 .cd-panel__header h1 {
-  color: #89ba2c;
+  color: #334987;
   padding-left: 5%;
 }
 

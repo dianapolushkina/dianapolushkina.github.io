@@ -194,14 +194,14 @@ SIDE BUTTONS
 }
 
 .button {
-    border: 2px solid darkorange;
+    border: 2px solid #fd0a70;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 80px;
     width: 250px;
     height: 60px;
 }
 .button:hover {
-    box-shadow: 0 0 0 4px darkorange;
+    box-shadow: 0 0 0 4px #fd0a70;
 }
 
 .nav_button {
@@ -240,7 +240,7 @@ SIDE BUTTONS
     color: black;
     margin: 50px;
     border-radius: 10px;
-    border: 3px solid orange;
+    border: 3px solid #fd0a70;
 }
 
 
