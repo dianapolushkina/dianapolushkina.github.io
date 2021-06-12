@@ -1,0 +1,48 @@
+.about_container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.about_label {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10vw !important;
+    margin: auto;
+    z-index: 10;
+    color: white !important;
+}
+
+.about_photo {
+    float: left;
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    background-image: url("../images/catp.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.about_text_container {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+}
+
+.about_text_container_child {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+}
+
+.about_text {
+    color: white !important;
+}
