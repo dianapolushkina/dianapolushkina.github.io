@@ -1,16 +1,20 @@
 #contact_sidenav {
-    text-align: center;
-    height: 100%;
     width: 100%;
-    padding: 0;
-    margin: 0;
-    bottom: 0;
+    text-align: center;
     overflow-x: hidden;
     overflow-y: hidden;
     color: white;
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+}
+
+.contact_container {
+    text-align: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
 
 #thankyoumessage {
@@ -34,66 +38,28 @@
 .customer_name {
     float: left;
     margin: 20px auto;
-    border-radius: 7px;
+    border-radius: 12px;
     padding: 10px;
     width: 45%;
+    font-size: 100%;
 }
 
 .customer_email {
     float: right;
     margin: 20px auto;
-    border-radius: 7px;
+    border-radius: 12px;
     padding: 10px;
     width: 45%;
+    font-size: 100%;
 }
 
 textarea {
     width: 100%;
     height: 150px;
-    border-radius: 7px;
+    border-radius: 12px;
     padding: 10px;
+    font-size: 100%;
 }
-
-/*.customer_name {*/
-/*    float: left;*/
-/*    background: transparent;*/
-/*    color: white;*/
-/*    border: 2px solid white;*/
-/*    border-radius: 7px;*/
-/*    padding: 10px;*/
-/*    font-size: 100%;*/
-/*    margin: 15px;*/
-/*    width: 45%;*/
-/*    max-width: 90%;*/
-/*}*/
-
-/*.customer_email {*/
-/*    float: right;*/
-/*    background: transparent;*/
-/*    color: white;*/
-/*    border: 2px solid white;*/
-/*    border-radius: 7px;*/
-/*    padding: 10px;*/
-/*    font-size: 100%;*/
-/*    margin: 0px;*/
-/*    width: 45%;*/
-/*    max-width: 90%;*/
-/*}*/
-
-/*textarea {*/
-/*    background: transparent;*/
-/*    border: 2px solid white;*/
-/*    border-radius: 7px;*/
-/*    display: block;*/
-/*    resize: none;*/
-/*    margin: 15px;*/
-/*    padding: 10px;*/
-/*    width: 100%;*/
-/*    height: 150px;*/
-/*    font-size: 100%;*/
-/*    color: white;*/
-
-/*}*/
 
 fieldset {
     border: none;
@@ -155,6 +121,7 @@ fieldset {
     }
 
     #contact_sidenav {
+        height: 100%;
         overflow-y: auto;
     }
 }
