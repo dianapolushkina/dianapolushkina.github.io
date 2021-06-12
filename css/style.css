@@ -2,22 +2,19 @@
     box-sizing: border-box;
     margin: 0 !important;
 }
-.elem {
-    display: inline-block;
-    font-size: 0;
-    width: 33%;
-    border: 20px solid transparent;
-    border-bottom: none;
-    background: #fff;
-    padding: 0;
-    height: auto;
-    background-clip: padding-box;
+
+.gallery_panel {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    align-items: stretch;
 }
+
 .elem > span {
     display: block;
     cursor: pointer;
     height: 0;
-    padding-bottom:	70%;
+    padding-bottom: 70%;
     background-size: cover;
     background-position: center center;
 }
@@ -28,6 +25,7 @@
 .lcl_fade_oc.lcl_is_closing #lcl_window {
     opacity: 0 !important;
 }
+
 .lcl_fade_oc.lcl_is_closing #lcl_overlay {
     -webkit-transition-delay: .15s !important;
     transition-delay: .15s !important;
@@ -86,6 +84,7 @@ VIDEO BACKGROUND
     height: 100%;
     overflow: hidden;
 }
+
 .video-container video {
     /* Make video to at least 100% wide and tall */
     min-width: 100%;
@@ -99,7 +98,7 @@ VIDEO BACKGROUND
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 /*--------------------------------
@@ -200,6 +199,7 @@ SIDE BUTTONS
     width: 250px;
     height: 60px;
 }
+
 .button:hover {
     cursor: pointer;
     box-shadow: 0 0 0 4px #fd0a70;
@@ -243,11 +243,6 @@ SIDE BUTTONS
     border-radius: 10px;
     border: 3px solid #fd0a70;
 }
-
-
-/*.nav_button:hover {*/
-/*    box-shadow: 0px 0px 0px 4px darkorange;*/
-/*}*/
 
 /*=====================================
 ------------------------
