@@ -7,11 +7,14 @@
     bottom: 0;
     overflow-x: hidden;
     overflow-y: hidden;
-    color: black;
+    color: white;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
 }
 
 #thankyoumessage {
-    color: black;
+    color: white;
     font-size: 40px;
     margin: auto;
     margin-top: 30px;
@@ -20,7 +23,7 @@
 }
 
 #contact_sidenav p {
-    color: black;
+    color: white;
     width: 800px;
     max-width: 90%;
     font-size: 1.1em;
@@ -30,44 +33,67 @@
 
 .customer_name {
     float: left;
-    background: transparent;
-    color: black;
-    border: 2px solid white;
+    margin: 20px auto;
     border-radius: 7px;
     padding: 10px;
-    font-size: 100%;
-    margin: 15px 0;
-    width: 200px;
-    max-width: 90%;
+    width: 45%;
 }
 
 .customer_email {
     float: right;
-    background: transparent;
-    color: black;
-    border: 2px solid white;
+    margin: 20px auto;
     border-radius: 7px;
     padding: 10px;
-    font-size: 100%;
-    margin: 15px 0;
-    width: 200px;
-    max-width: 90%;
+    width: 45%;
 }
 
 textarea {
-    background: transparent;
-    border: 2px solid white;
-    border-radius: 7px;
-    display: block;
-    resize: none;
-    margin: 0;
-    padding: 10px;
     width: 100%;
     height: 150px;
-    font-size: 100%;
-    color: black;
-
+    border-radius: 7px;
+    padding: 10px;
 }
+
+/*.customer_name {*/
+/*    float: left;*/
+/*    background: transparent;*/
+/*    color: white;*/
+/*    border: 2px solid white;*/
+/*    border-radius: 7px;*/
+/*    padding: 10px;*/
+/*    font-size: 100%;*/
+/*    margin: 15px;*/
+/*    width: 45%;*/
+/*    max-width: 90%;*/
+/*}*/
+
+/*.customer_email {*/
+/*    float: right;*/
+/*    background: transparent;*/
+/*    color: white;*/
+/*    border: 2px solid white;*/
+/*    border-radius: 7px;*/
+/*    padding: 10px;*/
+/*    font-size: 100%;*/
+/*    margin: 0px;*/
+/*    width: 45%;*/
+/*    max-width: 90%;*/
+/*}*/
+
+/*textarea {*/
+/*    background: transparent;*/
+/*    border: 2px solid white;*/
+/*    border-radius: 7px;*/
+/*    display: block;*/
+/*    resize: none;*/
+/*    margin: 15px;*/
+/*    padding: 10px;*/
+/*    width: 100%;*/
+/*    height: 150px;*/
+/*    font-size: 100%;*/
+/*    color: white;*/
+
+/*}*/
 
 fieldset {
     border: none;
@@ -79,7 +105,7 @@ fieldset {
 .submit_project {
     margin: 30px auto;
     background: transparent;
-    color: black;
+    color: white;
     border: 2px solid darkorange;
     letter-spacing: 1;
     font-weight: 100;
@@ -126,5 +152,9 @@ fieldset {
 
     textarea {
         width: 90%;
+    }
+
+    #contact_sidenav {
+        overflow-y: auto;
     }
 }

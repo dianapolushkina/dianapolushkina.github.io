@@ -143,13 +143,15 @@ header {
 /*---------------Footer---------------*/
 
 footer {
-    bottom: 2%;
+    position: absolute;
+    bottom: 3%;
 }
 
 .social_media {
-    height: 40px;
-    width: 250px;
-    margin: 10px auto;
+
+    height: 45px;
+    width: 100%;
+    margin: auto;
     text-align: center;
 }
 
@@ -161,20 +163,16 @@ footer {
     max-height: 100%;
 }
 
-#instagram:hover {
+.instagram:hover {
     border-color: #c32aa3;
 }
 
-#facebook:hover {
+.facebook:hover {
     border-color: #3b5998;
 }
 
-#linkedin:hover {
+.linkedin:hover {
     border-color: #007bb5;
-}
-
-#twitter:hover {
-    border-color: #1da1f2;
 }
 
 .copyright {

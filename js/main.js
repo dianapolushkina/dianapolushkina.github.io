@@ -28,7 +28,7 @@ $(document).ready(function ($) {
         $(".galleryButton").fadeIn();
         $(".contactButton").fadeIn();
         $(".aboutmeButton").fadeIn();
-        $("footer").fadeIn();
+        $(".disappear").fadeIn();
     });
 
     // Open left panel
@@ -45,7 +45,7 @@ $(document).ready(function ($) {
         $(".galleryButton").fadeIn();
         $(".contactButton").fadeIn();
         $(".aboutmeButton").fadeIn();
-        $("footer").fadeIn();
+        $(".disappear").fadeIn();
     });
 
     // Open bottom panel
@@ -62,7 +62,7 @@ $(document).ready(function ($) {
         $(".galleryButton").fadeIn();
         $(".contactButton").fadeIn();
         $(".aboutmeButton").fadeIn();
-        $("footer").fadeIn();
+        $(".disappear").fadeIn();
     });
 
     var timer;
@@ -71,17 +71,17 @@ $(document).ready(function ($) {
         $(".galleryButton").fadeIn();
         $(".contactButton").fadeIn();
         $(".aboutmeButton").fadeIn();
-        $("footer").fadeIn();
+        $(".disappear").fadeIn();
         timer = setTimeout(function () {
             $(".galleryButton").fadeOut();
             $(".contactButton").fadeOut();
             $(".aboutmeButton").fadeOut();
-            $("footer").fadeOut();
+            $(".disappear").fadeOut();
         }, 3000);
     }).mouseleave(function () {
         $(".galleryButton").fadeOut();
         $(".contactButton").fadeOut();
         $(".aboutmeButton").fadeOut();
-        $("footer").fadeOut();
+        $(".disappear").fadeOut();
     });
 });
