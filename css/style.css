@@ -201,6 +201,7 @@ SIDE BUTTONS
     height: 60px;
 }
 .button:hover {
+    cursor: pointer;
     box-shadow: 0 0 0 4px #fd0a70;
 }
 
