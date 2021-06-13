@@ -918,3 +918,10 @@ iPad 3
         overflow-y: auto;
     }
 }
+
+@media only screen and (orientation: landscape) {
+    .nav_button {
+        width: 20%;
+        margin: 3%;
+    }
+}
