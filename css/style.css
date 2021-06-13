@@ -216,7 +216,7 @@ ABOUT ME
 .about_photo {
     float: left;
     width: 50%;
-    height: 88%;
+    height: 100%;
     display: inline-block;
     background-image: url("../images/catp.png");
     background-size: contain;
@@ -241,7 +241,7 @@ ABOUT ME
 }
 
 .about_text {
-    font-size: 2vh !important;
+    font-size: 2.25vh !important;
     color: white !important;
 }
 
@@ -254,7 +254,7 @@ ABOUT ME
     transition: 0.3s;
     padding: 5px 15px;
     border-radius: 15px;
-    font-size: 2vh;
+    font-size: 2.25vh;
     max-width: 75%;
 }
 
