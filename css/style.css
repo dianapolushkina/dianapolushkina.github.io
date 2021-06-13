@@ -212,7 +212,7 @@ ABOUT ME
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 10vw !important;
+    font-size: 10vh !important;
     margin: auto;
     z-index: 10;
     color: white !important;
@@ -246,7 +246,7 @@ ABOUT ME
 }
 
 .about_text {
-    font-size: 1.25vw !important;
+    font-size: 1.5vh !important;
     color: white !important;
 }
 
@@ -259,7 +259,7 @@ ABOUT ME
     transition: 0.3s;
     padding: 5px 15px;
     border-radius: 15px;
-    font-size: 1.25vw;
+    font-size: 1.5vh;
 }
 
 .download_cv:hover {
