@@ -19,6 +19,7 @@
     <script src="js/main.js"></script>
     <script src="js/lc_lightbox.lite.js" type="text/javascript"></script>
     <script src="js/AlloyFinger/alloy_finger.min.js" type="text/javascript"></script>
+    <script src="js/form-submission-handler.js" type="text/javascript" data-cfasync="false"></script>
 
     <title>Diana Polushkina | Aerial Hoop Performer</title>
 </head>
@@ -80,6 +81,8 @@
     <div class="cd-panel__container">
         <div class="cd-panel__content">
             <div class="contact_container">
+                <h1 id="thankyoumessage">Ok, just a few quick questions.</h1>
+                <div class="loader"></div>
                 <div id="contact_sidenav" class="sidenav">
                     <div class="contact_text">
                         <p>My work is mainly based in Bristol, UK and Tallinn, Estonia. If you have any questions or
@@ -178,73 +181,59 @@
         <div class="cd-panel__content">
             <div class="gallery_panel">
                 <a class="elem"
-                   href="images/photos/1.jpg" data-lcl-txt="lorem ipsum dolor sit amet" data-lcl-author="someone"
-                   data-lcl-thumb="images/photos/1.jpg">
+                   href="images/photos/1.jpg" data-lcl-thumb="images/photos/1.jpg">
                     <span style="background-image: url(images/photos/1.jpg);"></span>
                 </a>
                 <a class="elem"
-                   href="images/photos/2.jpg" data-lcl-txt="lorem ipsum dolor sit amet" data-lcl-author="someone"
-                   data-lcl-thumb="images/photos/2.jpg">
+                   href="images/photos/2.jpg" data-lcl-thumb="images/photos/2.jpg">
                     <span style="background-image: url(images/photos/2.jpg);"></span>
                 </a>
                 <a class="elem"
-                   href="images/photos/3.jpg" data-lcl-txt="lorem ipsum dolor sit amet" data-lcl-author="someone"
-                   data-lcl-thumb="images/photos/3.jpg">
+                   href="images/photos/3.jpg" data-lcl-thumb="images/photos/3.jpg">
                     <span style="background-image: url(images/photos/3.jpg);"></span>
                 </a>
                 <a class="elem"
-                   href="images/photos/4.jpg" data-lcl-txt="lorem ipsum dolor sit amet" data-lcl-author="someone"
-                   data-lcl-thumb="images/photos/4.jpg">
+                   href="images/photos/4.jpg" data-lcl-thumb="images/photos/4.jpg">
                     <span style="background-image: url(images/photos/4.jpg);"></span>
                 </a>
                 <a class="elem"
-                   href="images/photos/5.jpg" data-lcl-txt="lorem ipsum dolor sit amet" data-lcl-author="someone"
-                   data-lcl-thumb="images/photos/5.jpg">
+                   href="images/photos/5.jpg" data-lcl-thumb="images/photos/5.jpg">
                     <span style="background-image: url(images/photos/5.jpg);"></span>
                 </a>
                 <a class="elem"
-                   href="images/photos/6.jpg" data-lcl-txt="lorem ipsum dolor sit amet" data-lcl-author="someone"
-                   data-lcl-thumb="images/photos/6.jpg">
+                   href="images/photos/6.jpg" data-lcl-thumb="images/photos/6.jpg">
                     <span style="background-image: url(images/photos/6.jpg);"></span>
                 </a>
                 <a class="elem"
-                   href="images/photos/8.jpg" data-lcl-txt="lorem ipsum dolor sit amet" data-lcl-author="someone"
-                   data-lcl-thumb="images/photos/8.jpg">
+                   href="images/photos/8.jpg" data-lcl-thumb="images/photos/8.jpg">
                     <span style="background-image: url(images/photos/8.jpg);"></span>
                 </a>
                 <a class="elem"
-                   href="images/photos/7.jpg" data-lcl-txt="lorem ipsum dolor sit amet" data-lcl-author="someone"
-                   data-lcl-thumb="images/photos/7.jpg">
+                   href="images/photos/7.jpg" data-lcl-thumb="images/photos/7.jpg">
                     <span style="background-image: url(images/photos/7.jpg);"></span>
                 </a>
                 <a class="elem"
-                   href="images/photos/14.jpg" data-lcl-txt="lorem ipsum dolor sit amet" data-lcl-author="someone"
-                   data-lcl-thumb="images/photos/14.jpg">
-                    <span style="background-image: url(images/photos/14.jpg);"></span>
-                </a>
-                <a class="elem"
-                   href="images/photos/11.jpg" data-lcl-txt="lorem ipsum dolor sit amet" data-lcl-author="someone"
-                   data-lcl-thumb="images/photos/11.jpg">
+                   href="images/photos/11.jpg" data-lcl-thumb="images/photos/11.jpg">
                     <span style="background-image: url(images/photos/11.jpg);"></span>
                 </a>
                 <a class="elem"
-                   href="images/photos/9.jpg" data-lcl-txt="lorem ipsum dolor sit amet" data-lcl-author="someone"
-                   data-lcl-thumb="images/photos/9.jpg">
+                   href="images/photos/14.jpg" data-lcl-thumb="images/photos/14.jpg">
+                    <span style="background-image: url(images/photos/14.jpg);"></span>
+                </a>
+                <a class="elem"
+                   href="images/photos/9.jpg" data-lcl-thumb="images/photos/9.jpg">
                     <span style="background-image: url(images/photos/9.jpg);"></span>
                 </a>
                 <a class="elem"
-                   href="images/photos/10.jpg" data-lcl-txt="lorem ipsum dolor sit amet" data-lcl-author="someone"
-                   data-lcl-thumb="images/photos/10.jpg">
+                   href="images/photos/10.jpg" data-lcl-thumb="images/photos/10.jpg">
                     <span style="background-image: url(images/photos/10.jpg);"></span>
                 </a>
                 <a class="elem"
-                   href="images/photos/12.jpg" data-lcl-txt="lorem ipsum dolor sit amet" data-lcl-author="someone"
-                   data-lcl-thumb="images/photos/12.jpg">
+                   href="images/photos/12.jpg" data-lcl-thumb="images/photos/12.jpg">
                     <span style="background-image: url(images/photos/12.jpg);"></span>
                 </a>
                 <a class="elem"
-                   href="images/photos/13.jpg" data-lcl-txt="lorem ipsum dolor sit amet" data-lcl-author="someone"
-                   data-lcl-thumb="images/photos/13.jpg">
+                   href="images/photos/13.jpg" data-lcl-thumb="images/photos/13.jpg">
                     <span style="background-image: url(images/photos/13.jpg);"></span>
                 </a>
             </div>

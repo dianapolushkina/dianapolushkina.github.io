@@ -52,6 +52,7 @@ $(document).ready(function ($) {
     $('.js-bottom-panel-trigger').on('click', function (event) {
         event.preventDefault();
         $('.js-cd-panel-bottom').addClass('cd-panel--is-visible');
+        resetContact()
     });
 
     // Close bottom panel
@@ -85,3 +86,20 @@ $(document).ready(function ($) {
         $(".disappear").fadeOut();
     });
 });
+
+function resetContact() {
+    $('#contact_sidenav').css('display', 'block');
+    $('#thankyoumessage').css('display', 'none');
+    $('.loader').css('display', 'none');
+}
+
+function sendingEmail() {
+    $('#thankyoumessage').css('display', 'block').text("Sending your message...");
+    $('#contact_sidenav').css('display', 'none');
+    $('.loader').css('display', 'block');
+}
+
+function thankYou() {
+    $('.loader').css('display', 'none');
+    $('#thankyoumessage').text("Thank you for contacting me!");
+}
