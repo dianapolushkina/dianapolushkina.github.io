@@ -333,6 +333,10 @@ Slide In Panel - by CodyHouse.co
   -webkit-overflow-scrolling: touch;
 }
 
+.gallery_content {
+  height: 100% !important;
+}
+
 .cd-panel__content p {
   font-size: 1.4rem;
   color: #424f5c;
