@@ -106,6 +106,10 @@ footer {
     border-color: #007bb5;
 }
 
+.youtube:hover {
+    border-color: #FF0000;
+}
+
 /*--------------------------------
 SIDE BUTTONS
 --------------------------------*/
