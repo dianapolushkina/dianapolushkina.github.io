@@ -200,7 +200,7 @@ ABOUT ME
 }
 
 .about_label_container {
-    height: 20%;
+    height: 12%;
 }
 
 .about_label {
@@ -217,7 +217,7 @@ ABOUT ME
 .about_photo {
     float: left;
     width: 50%;
-    height: 80%;
+    height: 88%;
     display: inline-block;
     background-image: url("../images/catp.png");
     background-size: contain;
@@ -229,7 +229,7 @@ ABOUT ME
     position: relative;
     float: left;
     width: 50%;
-    height: 80%;
+    height: 88%;
     display: inline-block;
 }
 
