@@ -167,7 +167,7 @@ GALLERY
 
 .gallery_panel {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     grid-gap: 20px;
     align-items: stretch;
 }
@@ -424,6 +424,10 @@ MEDIA QUERIES
         width: 70%;
         margin: 5% 0;
     }
+
+    .nav_button {
+        font-size: 1.2em;
+    }
 }
 
 /* Smartphones (landscape) ----------- */
@@ -492,6 +496,10 @@ MEDIA QUERIES
     .greetings {
         font-size: 280%;
     }
+
+    .nav_button {
+        font-size: 1.2em;
+    }
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -531,6 +539,10 @@ MEDIA QUERIES
 
     .about_label_container {
         height: 12%;
+    }
+
+    .nav_button {
+        font-size: 1.2em;
     }
 }
 
@@ -572,6 +584,10 @@ MEDIA QUERIES
     .about_label_container {
         height: 12%;
     }
+
+    .nav_button {
+        font-size: 1.2em;
+    }
 }
 
 /* iPads (portrait) ----------- */
@@ -612,6 +628,10 @@ MEDIA QUERIES
     .about_label_container {
         height: 12%;
     }
+
+    .nav_button {
+        font-size: 1.2em;
+    }
 }
 
 /**********
@@ -640,6 +660,10 @@ iPad 3
         float: right;
         width: 45%;
     }
+
+    .nav_button {
+        font-size: 1.2em;
+    }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
@@ -664,6 +688,10 @@ iPad 3
     .customer_email {
         float: right;
         width: 45%;
+    }
+
+    .nav_button {
+        font-size: 1.2em;
     }
 }
 
@@ -705,6 +733,10 @@ iPad 3
     .about_label_container {
         height: 12%;
     }
+
+    .nav_button {
+        font-size: 1.2em;
+    }
 }
 
 /* Large screens ----------- */
@@ -744,6 +776,10 @@ iPad 3
 
     .about_label_container {
         height: 12%;
+    }
+
+    .nav_button {
+        font-size: 1.2em;
     }
 }
 
